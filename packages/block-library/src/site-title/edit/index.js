@@ -67,7 +67,7 @@ export default function SiteTitleEdit( {
 				placeholder={ __( 'Write site title…' ) }
 				value={ title }
 				onChange={ setTitle }
-				allowedFormats={ [] }
+				allowedFormats={ [ 'core/bold', 'core/italic' ] }
 				disableLineBreaks
 				__unstableOnSplitAtEnd={ () =>
 					insertBlocksAfter( createBlock( getDefaultBlockName() ) )
